@@ -28,3 +28,16 @@ SELECT order_date,
 FROM first_table
 WHERE order_date = '4/18/2020'
 AND rep = 'Jones';
+
+SELECT *
+FROM first_table
+WHERE region IS NULL;
+
+UPDATE first_table SET
+	region = 'East'
+WHERE region IS NULL;
+
+DELETE
+--SELECT * 
+FROM first_table
+WHERE rep = 'Jones'
